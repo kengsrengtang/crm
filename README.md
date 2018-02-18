@@ -1,25 +1,22 @@
-# README
+# Customer Relationship Management(CRM)
+This is a very basic CRM project, it allow user to filter customer by name.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Architecture Detail
+Since it's very basic, I decided to use Server side render HTML, it make the development easier. But ideally I would love to use ReactJS and deploy it on node.js server as client
 
-Things you may want to cover:
+# Technologies
+* ruby 2.3.1
 
-* Ruby version
+* rails 5.1.5 
 
-* System dependencies
+* Mysql
 
-* Configuration
+* Twitter bootstrap
 
-* Database creation
+# Installation
 
-* Database initialization
+Generate customers data, it's default 100 record
+ ```
+rake customer:fake_data 
+ ```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# crm
