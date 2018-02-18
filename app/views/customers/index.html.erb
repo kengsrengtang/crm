@@ -1,0 +1,27 @@
+<h1>Customer List</h1>             
+<table>
+  <thead>                  
+    <tr>                   
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <%= form_tag customers_path, method:'get' do %>
+        <p>
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search", :name => nil %>
+        </p>
+      <% end %>
+    </tr>
+    <tr>
+      <% for customer in @customers %>
+        <div class='customer'>
+          <strong> <%= customer.name %> </strong>
+          <strong> <%= customer.address %> </strong>
+        </div>
+      <% end %>
+    </tr>       
+  </tbody>
+</table>
