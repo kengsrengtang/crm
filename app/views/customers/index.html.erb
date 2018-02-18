@@ -2,7 +2,8 @@
 <table>
   <thead>                  
     <tr>                   
-      <th></th>
+      <th> Name</th>
+      <th> Address</th>
     </tr>
   </thead>
 
@@ -17,10 +18,16 @@
     </tr>
     <tr>
       <% for customer in @customers %>
-        <div class='customer'>
+        <td width='150px'>
+        <div class='name'>
           <strong> <%= customer.name %> </strong>
-          <strong> <%= customer.address %> </strong>
         </div>
+        </td>
+        <td>
+        <div class='address'>
+          <%= customer.address %>
+        </div>
+        </td>
       <% end %>
     </tr>       
   </tbody>
